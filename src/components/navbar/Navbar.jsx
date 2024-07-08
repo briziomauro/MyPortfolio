@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import NavbarList from '../navbarList/NavbarList'
 import { Cursor } from '../cursor/Cursor'
 
