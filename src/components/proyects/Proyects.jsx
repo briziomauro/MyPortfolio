@@ -3,13 +3,13 @@ import Github from '../../assets/icons/Github'
 
 const Proyects = () => {
   const proyects = [
-    { id: 1, name: "Games E-Commerce", technologies: ["React", "CSS"], github: "#", background: 'bg-gradient-to-br from-[#8491A8] to-[#FFEDDF]' },
-    { id: 2, name: "Spotify Clone", technologies: ["React", "Tailwind"], github: "#", background: 'bg-gradient-to-tr from-[#004F3B] to-[#E8D8CC]' },
-    { id: 3, name: "API E-Commerce", technologies: ["NET"], github: "#", background: 'bg-gradient-to-br from-[#947B57] to-[#FFEDDF]' },
+    { id: 1, name: "Games E-Commerce", technologies: ["React", "CSS"], github: "https://github.com/ValentinCura/GamesHub", background: 'bg-gradient-to-br from-[#8491A8] to-[#FFEDDF]' },
+    { id: 2, name: "Spotify Clone", technologies: ["React", "Tailwind"], github: "https://github.com/briziomauro/SpotifyClone", background: 'bg-gradient-to-tr from-[#004F3B] to-[#E8D8CC]' },
+    { id: 3, name: "API E-Commerce", technologies: ["NET"], github: "https://github.com/ValentinCura/GamesHubApi", background: 'bg-gradient-to-br from-[#947B57] to-[#FFEDDF]' },
   ]
 
   return (
-    <div className='text-start'>
+    <div className='text-start mb-40'>
       <h2 className='text-[#8491A8] font-bold text-xl'>Proyectos -</h2>
       <div className='flex gap-5 mt-2 '>
         {proyects.map((singleProyect) => (
