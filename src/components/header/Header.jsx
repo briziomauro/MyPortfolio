@@ -8,10 +8,14 @@ const Header = () => {
     >
 
       <section
-        className='grid h-fit text-center bg-[#004F3B] text-[#F5F1ED]'
+        className='grid h-fit text-center bg-[#004F3B] text-[#F5F1ED] w-full'
       >
-        <HeaderTexts>Mauro Brizio</HeaderTexts>
-        <HeaderTexts>Full-Stack Developer</HeaderTexts>
+        <div className='flex gap-5 justify-center'>
+          <HeaderTexts>Mauro</HeaderTexts>
+          <HeaderTexts>Brizio</HeaderTexts>
+        </div>
+        <HeaderTexts>Full-Stack</HeaderTexts>
+        <HeaderTexts>Developer</HeaderTexts>
       </section>
     </div>
   )
