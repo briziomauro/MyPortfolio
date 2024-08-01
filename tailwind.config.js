@@ -9,6 +9,13 @@ export default {
       backgroundImage: {
         'headerImage': "url('./src/assets/img/header3.jpg')",
       },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
 
     },
   },

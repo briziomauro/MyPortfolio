@@ -2,8 +2,9 @@
     "language": "Language",
     "home": "Home",
     "aboutme": "About Me",
-    "aboutme-text": "Hello! I'm Mauro Brizio, I'm 21 years old, and I am studying for a University Degree in Programming at the National Technological University of Rosario. I am passionate about Fullstack development and have knowledge in JavaScript, React, and .NET Core. I am committed to continuous learning and constant improvement, aiming to create practical and effective solutions.",
+    "aboutme-text": "Hello! I'm Mauro Brizio, I'm 21 years old, and I am studying for a University Degree in Programming at the National Technological University of Rosario. I am passionate about Fullstack development and have knowledge in frameworks such as React and .NET Core. I am committed to continuous learning and constant improvement, aiming to create practical and effective solutions.",
     "proyects": "Proyects",
     "technologies": "Technologies",
-    "stack-text": "Technologies and Tools I Use..."
+    "stack-text": "Technologies and Tools I Use...",
+    "findme": "Find me here..."
 }

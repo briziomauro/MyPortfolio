@@ -25,26 +25,29 @@ function App() {
       <div className='flex justify-center gap-5'>
         <Navbar />
         <div className='text-white flex'>
-          <button onClick={() => setIsOpen(!isOpen)} className='h-full items-center justify-center flex gap-2'>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className='h-full items-center justify-center flex gap-2'
+          >
             <img
               src={currentLanguage === 'es' ? "../src/assets/svg/spain-svg.svg" : "../src/assets/svg/united-states-svg.svg"}
               alt=""
               className='h-8 w-8'
             />
             <p className='text-center'>{currentLanguage === 'es' ? 'ES' : 'EN'}</p>
-            <i className={isOpen ? "bi bi-chevron-up" : "bi bi-chevron-down"}/>
+            <i className={isOpen ? "bi bi-chevron-up" : "bi bi-chevron-down"} />
           </button>
-          {isOpen && (
-            <div className='flex flex-col absolute top-20 text-start'>
-              <div className='w-full h-[1px] bg-white mt-2'></div>
-              <button className='flex gap-2 items-center pt-2' onClick={() => changeLanguage('es')}>
-                <p className='text-center'>Español - ES</p>
-              </button>
-              <button className='flex items-center gap-2' onClick={() => changeLanguage('en')}>
-                <p className='text-center'>English - EN</p>
-              </button>
-            </div>
-          )}
+          <div
+            className={`flex flex-col absolute top-20 text-start transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'}`}
+          >
+            <div className='w-full h-[1px] bg-white mt-2'></div>
+            <button className='flex gap-2 items-center pt-2' onClick={() => changeLanguage('es')}>
+              <p className='text-center'>Español - ES</p>
+            </button>
+            <button className='flex items-center gap-2' onClick={() => changeLanguage('en')}>
+              <p className='text-center'>English - EN</p>
+            </button>
+          </div>
         </div>
       </div>
       <Header />
