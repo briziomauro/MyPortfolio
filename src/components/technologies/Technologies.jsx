@@ -6,12 +6,15 @@ import ReactJS from '../../assets/icons/ReactJS'
 import FramerM from '../../assets/icons/FramerM'
 import Tailwind from '../../assets/icons/Tailwind'
 import Figma from '../../assets/icons/Figma'
+import { useTranslation } from 'react-i18next'
 
 const Technologies = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='text-start mb-40'>
       <h2 className='text-[#8491A8] font-bold text-xl'>Stack -</h2>
-      <p className='text-white mt-1'>Tecnologias y Herramientas que utilizo...</p>
+      <p className='text-white mt-1'>{t('stack-text')}</p>
       <div className='flex flex-wrap mt-4 gap-6'>
         <div className='flex justify-between items-center w-60 border-solid  border-b-4 border border-white p-3 filter grayscale transition duration-300 ease-in-out hover:filter-none'>
           <Html5 />

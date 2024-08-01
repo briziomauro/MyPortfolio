@@ -8,7 +8,7 @@ const Header = () => {
     >
 
       <section
-        className='grid h-fit text-center bg-[#004F3B] text-[#F5F1ED] w-full'
+        className='grid h-fit text-center bg-headerImage bg-cover text-[#F5F1ED] w-full'
       >
         <div className='flex gap-5 justify-center'>
           <HeaderTexts>Mauro</HeaderTexts>

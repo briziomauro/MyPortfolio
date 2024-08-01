@@ -1,12 +1,14 @@
 import React from 'react'
 import Github from '../../assets/icons/Github'
 import LinkedIn from '../../assets/icons/LinkedIn'
+import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <div className='text-start mb-40' id='aboutme' >
-      <h2 className='text-[#8491A8] font-bold text-xl'>Sobre Mi -</h2>
-      <p className='text-white mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam et soluta quam numquam commodi officia temporibus nisi nam expedita excepturi, quos eaque quidem voluptatum quasi optio delectus praesentium alias odit eos esse aperiam! Autem, sed facere. Libero ut recusandae ipsam!</p>
+      <h2 className='text-[#8491A8] font-bold text-xl'>{t('aboutme')} -</h2>
+      <p className='text-white mt-1'>{t('aboutme-text')}</p>
       <section className='flex text-white gap-4 mt-4'>
         <a href="https://github.com/briziomauro" target='_blank'>
           <div className='flex justify-between items-center w-60 border-solid border-b-4 border border-white p-4 hover:bg-white transition-all duration-300 ease-in-out '>
