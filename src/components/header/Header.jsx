@@ -4,7 +4,7 @@ import HeaderTexts from '../headerTexts/HeaderTexts'
 const Header = () => {
   return (
     <div
-      className='flex h-[600px] justify-center items-center'
+      className='flex h-[600px] justify-center items-center' id='home'
     >
 
       <section

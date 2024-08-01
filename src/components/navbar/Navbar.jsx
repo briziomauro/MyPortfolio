@@ -24,10 +24,10 @@ const Navbar = () => {
                     )
                 }}
                 className='relative mx-auto flex w-fit rounded-full border-2 border-white bg-black p-1'>
-                <NavbarList setPosition={setPosition}>{t('home')}</NavbarList>
-                <NavbarList setPosition={setPosition}>{t('aboutme')}</NavbarList>
-                <NavbarList setPosition={setPosition}>{t('proyects')}</NavbarList>
-                <NavbarList setPosition={setPosition}>{t('technologies')}</NavbarList>
+                <NavbarList href="#home" setPosition={setPosition}>{t('home')}</NavbarList>
+                <NavbarList href="#aboutme" setPosition={setPosition}>{t('aboutme')}</NavbarList>
+                <NavbarList href="#proyects" setPosition={setPosition}>{t('proyects')}</NavbarList>
+                <NavbarList href="#technologies" setPosition={setPosition}>{t('technologies')}</NavbarList>
                 <Cursor position={position} />
             </ul>
         </nav>
