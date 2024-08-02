@@ -16,9 +16,15 @@ const Proyects = () => {
       <div className='flex flex-wrap gap-5 mt-2 '>
         {proyects.map((singleProyect) => (
           <div key={singleProyect.id} className={`flex flex-col justify-between w-80 h-80  transition-all duration-500 ${singleProyect.background}`}>
-            <a href={singleProyect.github} target='_blank' className='flex justify-end p-3'> 
-              <Github/>
-            </a>
+            <div className='flex items-center justify-end'>
+              <div className='flex items-center gap-2 animate-bounceRight'>
+                <p className='text-sm'>{t('findCode')}</p>
+                <i className="bi bi-arrow-right-short text-xl" />
+              </div>
+              <a href={singleProyect.github} target='_blank' className='flex justify-end p-3'>
+                <Github />
+              </a>
+            </div>
             <h2 className='flex justify-center text-2xl font-bold'>{singleProyect.name}</h2>
             <div className='flex justify-center gap-3 pb-3'>
               {singleProyect.technologies.map((tech, index) => (

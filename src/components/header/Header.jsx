@@ -1,20 +1,23 @@
 import React from 'react'
 import HeaderTexts from '../headerTexts/HeaderTexts'
+import HeaderSubTexts from '../headerTexts/headerSubTexts'
 
 const Header = () => {
   return (
     <div
-      className='flex md:h-[600px] h-[500px] mb-40 my-5 md:m-0 justify-center items-center bg-headerImage bg-cover lg:bg-none' id='home'
+      className='flex h-[500px] mb-14 my-10 justify-center items-center bg-headerImage bg-cover ' id='home'
     >
       <section
-        className='grid h-fit text-center lg:bg-headerImage bg-cover text-[#F5F1ED] w-full'
+        className='grid h-fit text-center text-[#F5F1ED] w-full'
       >
         <div className='flex gap-5 justify-center'>
           <HeaderTexts>Mauro</HeaderTexts>
           <HeaderTexts>Brizio</HeaderTexts>
         </div>
-        <HeaderTexts>Full-Stack</HeaderTexts>
-        <HeaderTexts>Developer</HeaderTexts>
+        <div className='flex justify-center gap-4'>
+          <HeaderSubTexts>Full-Stack</HeaderSubTexts>
+          <HeaderSubTexts>Developer</HeaderSubTexts>
+        </div>
       </section>
     </div>
   )

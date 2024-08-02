@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const HeaderTexts = ({ children }) => {
+const HeaderSubTexts = ({ children }) => {
   const DURATION = 0.15;
   const STAGGER = 0.025;
   const [animate, setAnimate] = useState(false);
@@ -18,7 +18,7 @@ const HeaderTexts = ({ children }) => {
     <motion.p
       initial="initial"
       animate={animate ? "end" : "initial"}
-      className="relative block overflow-hidden text-5xl font-black md:text-8xl lg:text-9xl"
+      className="relative block overflow-hidden text-3xl font-black md:text-8xl lg:text-8xl"
     >
       <div>
         {children.split("").map((l, i) => (
@@ -70,4 +70,4 @@ const HeaderTexts = ({ children }) => {
   );
 }
 
-export default HeaderTexts;
+export default HeaderSubTexts;
