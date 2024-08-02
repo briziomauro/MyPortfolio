@@ -6,11 +6,11 @@ import { useTranslation } from 'react-i18next';
 const AboutMe = () => {
   const { t } = useTranslation();
   return (
-    <div className='text-start mb-40' id='aboutme' >
-      <h2 className='text-[#8491A8] font-bold text-xl'>{t('aboutme')} -</h2>
+    <div className='text-start mb-40 mt-8 md:mt-0' id='aboutme' >
+      <h2 className='text-[#8491A8] font-bold text-lg lg:text-xl'>{t('aboutme')} -</h2>
       <p className='text-white mt-1'>{t('aboutme-text')}</p>
       <p className='text-[#8491A8] font-bold mt-2'>{t('findme')}</p>
-      <section className='flex text-white gap-4 mt-3'>
+      <section className='flex flex-wrap text-white gap-4 mt-3'>
         <a href="https://github.com/briziomauro" target='_blank'>
           <div className='flex justify-between items-center w-60 border-solid border-b-4 border border-white p-4 hover:bg-white transition-all duration-300 ease-in-out '>
             <p className='mix-blend-difference'>

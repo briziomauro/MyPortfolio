@@ -18,7 +18,7 @@ const HeaderTexts = ({ children }) => {
     <motion.p
       initial="initial"
       animate={animate ? "end" : "initial"}
-      className="relative block overflow-hidden text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+      className="relative block overflow-hidden text-5xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
     >
       <div>
         {children.split("").map((l, i) => (

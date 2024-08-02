@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div className='flex justify-center gap-5'>
+      <div className='flex flex-wrap justify-center gap-5'>
         <Navbar />
         <div className='text-white flex'>
           <button
@@ -38,7 +38,7 @@ function App() {
             <i className={isOpen ? "bi bi-chevron-up" : "bi bi-chevron-down"} />
           </button>
           <div
-            className={`flex flex-col absolute top-20 text-start transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'}`}
+            className={`flex flex-col absolute top-32 md:top-20 text-start transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'}`}
           >
             <div className='w-full h-[1px] bg-white mt-2'></div>
             <button className='flex gap-2 items-center pt-2' onClick={() => changeLanguage('es')}>
