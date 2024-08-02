@@ -15,7 +15,7 @@ const Technologies = () => {
 
   return (
     <>
-      <section className='text-start mb-40' id="technologies">
+      <section className='text-start mb-20' id="technologies">
         <h2 className='text-[#8491A8] font-bold text-xl'>Stack -</h2>
         <p className='text-white mt-1'>{t('stack-text')}</p>
         <div className='flex flex-wrap mt-4 gap-6'>

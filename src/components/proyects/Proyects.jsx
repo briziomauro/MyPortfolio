@@ -11,7 +11,7 @@ const Proyects = () => {
   ]
 
   return (
-    <div className='text-start mb-40' id='proyects'>
+    <div className='text-start mb-20' id='proyects'>
       <h2 className='text-[#8491A8] font-bold text-xl'>{t('proyects')} -</h2>
       <div className='flex flex-wrap gap-5 mt-2 '>
         {proyects.map((singleProyect) => (

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const AboutMe = () => {
   const { t } = useTranslation();
   return (
-    <div className='text-start mb-40 mt-8 md:mt-0' id='aboutme' >
+    <div className='text-start mb-20 mt-8 md:mt-0' id='aboutme' >
       <h2 className='text-[#8491A8] font-bold text-lg lg:text-xl'>{t('aboutme')} -</h2>
       <p className='text-white mt-1'>{t('aboutme-text')}</p>
       <p className='text-[#8491A8] font-bold mt-2'>{t('findme')}</p>
