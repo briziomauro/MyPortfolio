@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'headerImage': "url('./src/assets/img/header.webp')",
+        'headerImage': "url('./img/header.webp')",
       },
       backgroundSize: {
         'size-200': '200% 200%',

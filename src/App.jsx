@@ -30,7 +30,7 @@ function App() {
             className='h-full items-center justify-center flex gap-2'
           >
             <img
-              src={currentLanguage === 'es' ? "../src/assets/svg/spain-svg.svg" : "../src/assets/svg/united-states-svg.svg"}
+              src={currentLanguage === 'es' ? "./svg/spain-svg.svg" : "./svg/united-states-svg.svg"}
               alt=""
               className='h-8 w-8'
             />
