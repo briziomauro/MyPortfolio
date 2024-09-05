@@ -1,24 +1,16 @@
 import React, { useRef } from 'react'
 
-const NavbarList = ({ href, children, setPosition }) => {
+const NavbarList = ({ href, children }) => {
     const ref = useRef(null)
 
     return (
-        <li
-            ref={ref}
-            onMouseEnter={() => {
-                const {width} = ref.current.getBoundingClientRect();
-                setPosition({
-                    width,
-                    opacity: 1,
-                    left: ref.current.offsetLeft,
-                })
-            }}
-            className='relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-3 md:text-base'>
-            <a href={href}>
-                {children}
-            </a>
-        </li>
+        <a href={href}>
+            <li
+                ref={ref}
+                className='z-10 block cursor-pointer p-3 text-lg uppercase text-white md:text-xl hover:bg-white hover:text-black transition-all duration-75 font-robotoCon'>
+                <p>{children}</p>
+            </li>
+        </a>
     )
 }
 

@@ -1,36 +1,42 @@
-import React, { useState } from 'react'
+import React from 'react'
 import NavbarList from '../navbarList/NavbarList'
-import { Cursor } from '../cursor/Cursor'
 import { useTranslation } from 'react-i18next';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import LanguageChanger from '../languageChanger/LanguageChanger';
 
 const Navbar = () => {
     const { t } = useTranslation();
 
-    const [position, setPosition] = useState({
-        left: 0,
-        width: 0,
-        opacity: 0,
-    })
-
     return (
-        <nav>
-            <ul
-                onMouseLeave={() => {
-                    setPosition(
-                        prev => ({
-                            ...prev,
-                            opacity: 0,
-                        })
-                    )
-                }}
-                className='relative mx-auto flex w-fit rounded-full border-2 border-white bg-black p-1'>
-                <NavbarList href="#home" setPosition={setPosition}>{t('home')}</NavbarList>
-                <NavbarList href="#aboutme" setPosition={setPosition}>{t('aboutme')}</NavbarList>
-                <NavbarList href="#proyects" setPosition={setPosition}>{t('proyects')}</NavbarList>
-                <NavbarList href="#technologies" setPosition={setPosition}>{t('technologies')}</NavbarList>
-                <Cursor position={position} />
-            </ul>
-        </nav>
+        <div className="drawer top-10">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content ">
+                <label htmlFor="my-drawer" className="btn bg-black border border-white border-l-0 drawer-button rounded-none transition-all duration-300">
+                    <i className="bi bi-list text-xl md:text-2xl text-white mix-blend-difference" />
+                </label>
+            </div>
+            <div className="drawer-side">
+                <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+                <ul className="flex flex-col gap-4 justify-center bg-black border border-white border-y-0 border-l-0 text-white min-h-full w-60 md:w-80 p-4">
+                    <label
+                        htmlFor="my-drawer"
+                        className="btn bg-black border border-white border-l-black drawer-button rounded-none hover:bg-white transition-all duration-300 absolute top-10 left-[238px] md:left-[318px]"
+                    >
+                        <i className="bi bi-list text-xl md:text-2xl text-white mix-blend-difference" />
+                    </label>
+                    <div>
+                        <NavbarList href="#home">{t('home')}</NavbarList>
+                        <NavbarList href="#aboutme">{t('aboutme')}</NavbarList>
+                        <NavbarList href="#projects">{t('projects')}</NavbarList>
+                        <NavbarList href="#technologies">{t('technologies')}</NavbarList>
+                    </div>
+                    <div className='flex w-full bg-white h-[1px]' />
+                    <div className='flex w-full'>
+                        <LanguageChanger />
+                    </div>
+                </ul>
+            </div>
+        </div>
     )
 }
 

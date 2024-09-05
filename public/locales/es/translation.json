@@ -4,9 +4,13 @@
     "aboutme": "Sobre Mi",
     "aboutme-text": "¡Hola! Soy Mauro Brizio, desarrollador Fullstack de 21 años, actualmente cursando la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional de Rosario. Tengo experiencia en frameworks como React y .NET Core, y estoy apasionado por la creación de soluciones prácticas y efectivas. Estoy comprometido con el aprendizaje continuo y la mejora constante para ofrecer siempre lo mejor en cada proyecto.",
     "findCode": "Mira el código aquí",
-    "proyects": "Proyectos",
+    "featured":"Destacados",
+    "projects": "Mis Proyectos",
     "technologies": "Tecnologias",
-    "stack-text": "Tecnologias y Herramientas que utilizo...",
+    "stack-text": "Herramientas & Frameworks",
     "findme": "Encuentrame aqui...",
-    "learning": "Actualmente estoy aprendiendo..."
+    "using":"Utilizo",
+    "learning": "Aprendiendo",
+    "spanish": "Español",
+    "english": "Ingles"
 }

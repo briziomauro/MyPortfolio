@@ -19,15 +19,30 @@ export default {
       animation: {
         bounceRight: 'bounceRight 2s ease-in-out infinite',
       },
+      animationNav: {
+        bounce: 'bounce 0.5s ease-in-out infinite',
+      },
+
       keyframes: {
         bounceRight: {
           '0%': { transform: 'translateX(0)' },
           '50%': { transform: 'translateX(7px)' },
           '100%': { transform: 'translateX(0)' },
         },
-      }
+        bounce: {
+          '0%': { transform: 'translateY(1)' },
+          '50%': { transform: 'translateY(-1px)' },
+          '100%': { transform: 'translateY(1)' },
+        },
+      },
+      fontFamily: {
+        robotoCon: ["Roboto Condensed", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 
