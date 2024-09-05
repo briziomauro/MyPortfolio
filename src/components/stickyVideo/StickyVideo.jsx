@@ -25,7 +25,7 @@ const StickyVideo = ({ videoUrl, imgPadding }) => {
                 autoPlay
                 muted
                 loop
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full pointer-events-none object-cover"
             />
         </motion.div>
     );
