@@ -32,7 +32,7 @@ const AboutMe = () => {
               <p className='ml-2'>Github</p>
             </div>
           </a>
-          <a href="www.linkedin.com/in/maurobrizio" target='_blank' rel="noopener noreferrer" className='flex-1 border-solid border-b-4 border border-white p-4 transition-all duration-300 ease-in-out hover:flex-[2] hover:bg-[#FF073A]'>
+          <a href="https://www.linkedin.com/in/maurobrizio/" target='_blank' rel="noopener noreferrer" className='flex-1 border-solid border-b-4 border border-white p-4 transition-all duration-300 ease-in-out hover:flex-[2] hover:bg-[#FF073A]'>
             <div className='flex items-center justify-between'>
               <span className='flex items-center'>
                 <LinkedIn />
