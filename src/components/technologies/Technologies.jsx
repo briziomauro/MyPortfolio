@@ -37,6 +37,7 @@ const Technologies = () => {
           <TechCard Icon={Tailwind} label="Tailwind" />
           <TechCard Icon={NetCore} label="Net Core" />
           <TechCard Icon={Figma} label="Figma" />
+          <TechCard Icon={MySql} label="MySQL" />
         </div>
 
         <div className='relative text-center mt-20 mb-10'>
@@ -52,7 +53,6 @@ const Technologies = () => {
 
         <div className='flex flex-wrap justify-center mt-4 gap-6'>
           <TechCard Icon={FramerM} label="Framer Motion" />
-          <TechCard Icon={MySql} label="MySQL" />
         </div>
       </section>
     </div>
