@@ -4,11 +4,9 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
-export const HeroParallax = ({
-    products
-}) => {
+export const HeroParallax = ({ projects }) => {
     const { t } = useTranslation();
-    const firstRow = products.slice(0, 3);
+    const firstRow = projects.slice(0, 3);
 
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
@@ -36,8 +34,8 @@ export const HeroParallax = ({
                 }}
                 className="flex flex-col flex-wrap items-center justify-center">
                 <motion.div className="flex flex-col space-y-7 2xl:space-y-0 2xl:flex-row-reverse 2xl:space-x-reverse 2xl:space-x-20 mb-20 ">
-                    {firstRow.map((product) => (
-                        <ProductCard product={product} key={product.title} />
+                    {firstRow.map((project) => (
+                        <ProyectCard project={project} key={project.title} />
                     ))}
                 </motion.div>
             </motion.div>
@@ -60,8 +58,8 @@ export const Header = () => {
     );
 };
 
-export const ProductCard = ({
-    product,
+export const ProyectCard = ({
+    project,
     translate
 }) => {
     return (
@@ -72,19 +70,19 @@ export const ProductCard = ({
             whileHover={{
                 y: -20,
             }}
-            key={product.title}
+            key={project.title}
             className="group/product h-[300px] w-[350px] md:h-[400px] md:w-[600px] lg:w-[700px] 2xl:h-96 2xl:w-[30rem] relative flex-shrink-0">
-            <a href={product.link} className="block group-hover/product:shadow-2xl " target="_blank">
+            <a href={project.link} className="block group-hover/product:shadow-2xl " target="_blank">
                 <img
-                    src={product.thumbnail}
+                    src={project.thumbnail}
                     className="object-cover absolute h-full w-full inset-0"
-                    alt={product.title} />
+                    alt={project.title} />
             </a>
             <div
                 className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-60 bg-black pointer-events-none"></div>
             <h2
                 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white font-robotoCon">
-                {product.title}
+                {project.title}
             </h2>
         </motion.div>)
     );

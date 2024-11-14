@@ -1,4 +1,4 @@
-export const products = [
+export const projects = [
     {
         "title": "Landing Inmuebles",
         "thumbnail": "/img/landinginmuebles.JPG",

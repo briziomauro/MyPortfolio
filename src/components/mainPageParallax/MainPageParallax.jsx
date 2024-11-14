@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import ParallaxContentVideo from '../parallaxContentVideo/ParallaxContentVideo'
 import { t } from 'i18next'
 import { HeroParallax } from '../heroParallax/HeroParallax'
-import { products } from '../../data/Data'
+import { projects } from '../../data/Data'
 import { useTranslation } from 'react-i18next'
 
 const MainPageParallax = () => {
@@ -29,7 +29,7 @@ const MainPageParallax = () => {
             >
                 <AboutMe />
             </ParallaxContentVideo>
-            <HeroParallax products={products} />
+            <HeroParallax projects={projects} />
             <ParallaxContent
                 imgUrl="/img/stack-bg.jpg"
                 subheading={t('stack-text')}
