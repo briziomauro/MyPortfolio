@@ -12,6 +12,7 @@ import JavaScript from '../../assets/icons/JavaScript'
 import TechCard from '../techCard/TechCard'
 import Angular from '../../assets/icons/Angular'
 import Csharp from '../../assets/icons/Csharp'
+import TypeScript from '../../assets/icons/Typescript'
 
 const Technologies = () => {
   const { t } = useTranslation();
@@ -35,6 +36,7 @@ const Technologies = () => {
           <TechCard Icon={Html5} label="HTML5" />
           <TechCard Icon={Css} label="CSS" />
           <TechCard Icon={JavaScript} label="JavaScript" />
+          <TechCard Icon={TypeScript} label="TypeScript" />
           <TechCard Icon={Csharp} label="C#" />
           <TechCard Icon={ReactJS} label="React" />
           <TechCard Icon={Angular} label="Angular" />
