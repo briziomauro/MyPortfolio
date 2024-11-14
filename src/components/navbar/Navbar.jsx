@@ -7,8 +7,13 @@ import LanguageChanger from '../languageChanger/LanguageChanger';
 const Navbar = () => {
     const { t } = useTranslation();
 
+    const closeDrawer = (href) => {
+        window.location.hash = href;
+        document.getElementById('my-drawer').checked = false;
+    };
+
     return (
-        <div className="drawer top-10">
+        <div className="drawer top-10" id='sideDrawer'>
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content ">
                 <label htmlFor="my-drawer" className="btn bg-black border border-white border-l-0 drawer-button rounded-none transition-all duration-300">
@@ -25,10 +30,10 @@ const Navbar = () => {
                         <i className="bi bi-list text-xl md:text-2xl text-white mix-blend-difference" />
                     </label>
                     <div>
-                        <NavbarList href="#home">{t('home')}</NavbarList>
-                        <NavbarList href="#aboutme">{t('aboutme')}</NavbarList>
-                        <NavbarList href="#projects">{t('projects')}</NavbarList>
-                        <NavbarList href="#technologies">{t('technologies')}</NavbarList>
+                        <NavbarList href="#home" onClick={closeDrawer} >{t('home')}</NavbarList>
+                        <NavbarList href="#aboutme" onClick={closeDrawer}>{t('aboutme')}</NavbarList>
+                        <NavbarList href="#projects" onClick={closeDrawer}>{t('projects')}</NavbarList>
+                        <NavbarList href="#technologies" onClick={closeDrawer}>{t('technologies')}</NavbarList>
                     </div>
                     <div className='flex w-full bg-white h-[1px]' />
                     <div className='flex w-full'>
