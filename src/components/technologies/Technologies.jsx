@@ -44,8 +44,9 @@ const Technologies = () => {
           <TechCard Icon={NetCore} label="Net Core" />
           <TechCard Icon={Figma} label="Figma" />
           <TechCard Icon={MySql} label="MySQL" />
+          <TechCard Icon={FramerM} label="Framer Motion" />
         </div>
-
+        {/* 
         <div className='relative text-center mt-20 mb-10'>
           <div className='absolute inset-0 top-[-50px] z-10 flex justify-center items-center md:w-auto whitespace-nowrap'>
             <h2 className='text-5xl md:text-[80px] font-playfair text-zinc-800 overflow-hidden md:overflow-visible uppercase'>
@@ -58,8 +59,7 @@ const Technologies = () => {
         </div>
 
         <div className='flex flex-wrap justify-center mt-4 gap-6'>
-          <TechCard Icon={FramerM} label="Framer Motion" />
-        </div>
+        </div> */}
       </section>
     </div>
 

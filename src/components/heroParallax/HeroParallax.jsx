@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 export const HeroParallax = ({ projects }) => {
     const { t } = useTranslation();
     const firstRow = projects.slice(0, 3);
+    const secondRow = projects.slice(3, 4);
 
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
@@ -23,7 +24,7 @@ export const HeroParallax = ({ projects }) => {
         (<div
             id="projects"
             ref={ref}
-            className="2xl:h-[150vh] bg-black py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+            className="2xl:h-[200vh] bg-black py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
             <Header />
             <motion.div
                 style={{
@@ -35,6 +36,11 @@ export const HeroParallax = ({ projects }) => {
                 className="flex flex-col flex-wrap items-center justify-center">
                 <motion.div className="flex flex-col space-y-7 2xl:space-y-0 2xl:flex-row-reverse 2xl:space-x-reverse 2xl:space-x-20 mb-20 ">
                     {firstRow.map((project) => (
+                        <ProyectCard project={project} key={project.title} />
+                    ))}
+                </motion.div>
+                <motion.div className="flex flex-col space-y-7 2xl:space-y-0 2xl:flex-row-reverse 2xl:space-x-reverse 2xl:space-x-20 mb-20 ">
+                    {secondRow.map((project) => (
                         <ProyectCard project={project} key={project.title} />
                     ))}
                 </motion.div>

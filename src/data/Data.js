@@ -13,5 +13,10 @@ export const projects = [
         "title": "Training Center",
         "thumbnail": "/img/training-center.JPG",
         "link": "https://github.com/briziomauro/PPS-FrontEnd",
+    },
+    {
+        "title": "MOVA Rosario",
+        "thumbnail": "/img/movaMainPage.png",
+        "link": "https://movaros.vercel.app/",
     }
 ]
